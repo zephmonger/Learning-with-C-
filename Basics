@@ -1,0 +1,70 @@
+#include "pch.h" // This is a Standard Header File, it will help our solution to integrate all of our files
+#include <iostream> // This is the Basic input/output library, like the <stdio.h> on C
+#include <vector> //STD lib needed to use Vectors
+
+using namespace std;
+int main() {
+
+	vector <int> newVector(5);
+
+	cout << "Give me some values to put into the vector" << endl;
+	int usetinput{};
+	cin >> usetinput;
+	newVector.at(0) = usetinput;
+
+	cout << "Thi is my vector initialized by user " << newVector.at(0) << endl;
+
+
+
+	vector <int> myVector(5); //All 5 ints will be intitialized as 0
+
+	vector <int> initVector(10, 2); //10 elements, each initialized as 2
+
+	vector <int> manualVector{ 1, 2, 3, 4, 5 }; //A vector of 5 elements that has been initialized
+
+	vector <int> noCheck[3]; //This will not check if boundaries have been breached
+
+	vector <int> boundariesCheck{ 3 }; //This will  check if boundaries have been breached
+	
+	cout << manualVector.at(2) << endl; //Prints vector at element 2, which is 3;
+
+	cout << initVector.at(2) << endl; //Prints vector at element 2 wich is 2 for all of them
+
+	cout << "Add an extra element to the vector \"manual vector\"" << endl;
+	int extraElements{ 0 };
+	cin >> extraElements;
+	manualVector.push_back(extraElements);
+
+	for (size_t i = 0; i < manualVector.size(); i ++ ) {
+		cout << " This is the element " << i << " value: " << manualVector.at(i) << endl;
+	}
+
+}
+
+	/*double large{}, small{}, largel{}, smalls{}, tax{}, total{};
+	const double largeRoom{ 35 }, smallRoom{ 25 };
+	cout << "Carpet Cleaning Commercial Proposal\n" "Please check out our prices:\n";
+	cout << "Small Room: $25\nLarge Room : $35\nTaxes: 6% \n";
+	cout << "How many Large Rooms would you like cleaned?"; cin >> largel;
+	cout << "How many Small Rooms would you like cleaned?"; cin >> smalls;
+	large = largel; large = (large * largeRoom);
+	small = smalls; small = (small * smallRoom);
+	cout << "The cost is:\n Small room: " << smalls << "Price: $ " << small << endl;
+	cout << "The cost is:\n Large room: " << largel << "Price: $ " << large << endl;
+	tax = ((small + large) * 6) / 100;
+	cout << "Taxes: $ " << tax << endl; cout << "********************" << endl;
+	total = tax + small + large; cout << "Total is: " << total;
+}*/
+
+
+
+   /* std::cout << "Hello World!\n"; 
+	int a{}, b{}; 
+	double c{};
+	cout << "Insert nubers\n";
+	cin >> a;
+	cout << "Enter your divident \n";
+	cin >> b;
+	c = (b * a) / 100;
+	cout << c <<   " is "  << b <<  " Percent of "  << a << "\n";*/
+
