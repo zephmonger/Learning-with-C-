@@ -1,0 +1,75 @@
+#include "pch.h"
+#include <iostream>
+#include <vector>
+#include <cctype>
+#include <string>
+#include <cstdio>
+using namespace std;
+int main() {
+	string checking{};
+
+	cout << "enter a string" << endl;
+	cin >> checking;
+	cout << "The letter a is at " << endl;
+	cout << checking.find("a");
+
+
+
+
+}
+
+
+////////strings
+	//string name;
+	//string last;
+	//string fullname;
+	//cout << "Enter your name plz" << endl;
+	//cin >> name;
+	//cout << "Enter your Last name plz" << endl;
+	//cin >> last;
+	//fullname = name + " " + last;
+	//cout << "Your full name is " << fullname << endl;
+	//for (size_t i = 0; i < name.length(); i++) {    // can use .lenght or .size
+	//	cout << "The letter number " << i + 1 << " is " << name.at(i) << endl;
+	//}
+
+
+
+
+	/*char name[15]{};
+	cout << "Please enter your name" << endl;
+	cin >> name;
+	for (size_t i = 0; i < strlen(name); i++) {
+		putchar(toupper(name[i]));
+	}
+
+	cout << "This is your name in upper case " << name << endl;
+
+*/
+
+
+////////////////		Creating and adding to vectors
+
+	//vector <int> vector1{}; vector <int> vector2{}; vector <vector<int>> vector2D{};//Declaring Vectors
+	//int adding1 = { 10 }, adding2 = { 20 }, adding3 = { 100 }, adding4 = { 200 };//Declaring ints to add to Vectors
+	//vector1.push_back(adding1); vector1.push_back(adding2);//Adding to vector 1
+	//for (size_t i = 0; i < vector1.size(); i++) {//Printing Vector1
+	//	cout << "At vector1 Element " << i << " Value is " << vector1.at(i) << endl;
+	//} vector2.push_back(adding3); vector2.push_back(adding4);//Adding to vector2
+	//for (size_t i = 0; i < vector2.size(); i++) {//Printing Vector2
+	//	cout << "At vector2 element " << i << " Value is " << vector2.at(i) << endl;
+	//}vector2D.push_back(vector1); vector2D.push_back(vector2);//Adding to 2D Vector
+	//for (size_t i = 0; i < vector2D.size(); i++) {//Printing 2D Vector
+	//	for (size_t j = 0; j < vector2D[i].size(); j++) {
+	//		cout << "Vector2D " << i << " Column " << vector2D.at(i).at(j) << endl;
+	//	}
+	//}
+	//vector2D.at(0).at(0) = 1000;
+	////vector1.at(0) = vector2D.at(0).at(0) = 1000;//Adding to the first element of the first vector in Vector2D
+	//for (size_t i = 0; i < vector2D.size(); i++) {
+	//	for (size_t j = 0; j < vector2D[i].size(); j++) {
+	//		cout << "Vector2D " << i << " Column " << vector2D.at(i).at(j) << endl;
+	//	}
+	//}for (size_t i = 0; i < vector1.size(); i++) {
+	//	cout << "At vector1 Element " << i << " Value is " << vector1.at(i) << endl;
+	//}
