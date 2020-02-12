@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  Bonus Exercise 2.cpp
+  function.cpp
+c:\users\ramin.tajwanchi\source\repos\bonus exercise 2\bonus exercise 2\function.cpp(54): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+  Generating Code...
+  Bonus Exercise 2.vcxproj -> C:\Users\ramin.tajwanchi\source\repos\Bonus Exercise 2\Debug\Bonus Exercise 2.exe
